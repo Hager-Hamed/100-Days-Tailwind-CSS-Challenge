@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> Pick a card - with Tailwind CSS </title>
+    <style>
+        .hover\:-mt-32:hover {
+            margin-top: -9rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+    <div class="flex items-center justify-center w-screen h-screen bg-gray-100">
+        <!-- Component Start -->
+        <div
+            class="relative flex w-40 p-2 mt-16 -ml-12 -mr-12 transition-all duration-300 transform bg-white rounded-lg shadow-2xl cursor-pointer h-60 -rotate-12 hover:-mt-32">
+            <div class="relative flex items-center justify-center flex-grow border-2 border-red-600 rounded">
+                <div class="absolute flex flex-col items-center text-red-600 top-1 left-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                        <g transform="rotate(45,300,300)">
+                            <rect x="150" y="150" height="350" width="350" />
+                            <circle cx="150" cy="325" r="175" />
+                            <circle cx="325" cy="150" r="175" />
+                        </g>
+                    </svg>
+                </div>
+                <svg class="w-16 h-16 text-red-600 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 600">
+                    <g transform="rotate(45,300,300)">
+                        <rect x="150" y="150" height="350" width="350" />
+                        <circle cx="150" cy="325" r="175" />
+                        <circle cx="325" cy="150" r="175" />
+                    </g>
+                </svg>
+                <div class="absolute flex flex-col items-center text-red-600 bottom-1 right-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                        <g transform="rotate(45,300,300)">
+                            <rect x="150" y="150" height="350" width="350" />
+                            <circle cx="150" cy="325" r="175" />
+                            <circle cx="325" cy="150" r="175" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative flex w-40 p-2 mt-6 -ml-12 -mr-12 transition-all duration-300 transform bg-white rounded-lg shadow-2xl cursor-pointer h-60 -rotate-6 hover:-mt-32">
+            <div class="relative flex items-center justify-center flex-grow border-2 border-black rounded">
+                <div class="absolute flex flex-col items-center text-black top-1 left-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                        <defs>
+                            <mask id="stem-mask">
+                                <rect width="100%" height="100%" fill="#fff" />
+                                <circle cx="180" cy="490" r="100" fill="#000" />
+                                <circle cx="420" cy="490" r="100" fill="#000" />
+                            </mask>
+                        </defs>
+                        <rect x="200" y="400" height="200" width="200" fill="#000" mask="url(#stem-mask)" />
+                        <g transform="rotate(225,300,300)">
+                            <rect width="300" height="300" x="200" y="200" />
+                            <circle cx="200" cy="350" r="150" />
+                            <circle cx="350" cy="200" r="150" />
+                        </g>
+                    </svg>
+                </div>
+                <svg class="w-16 h-16 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                    <defs>
+                        <mask id="stem-mask">
+                            <rect width="100%" height="100%" fill="#fff" />
+                            <circle cx="180" cy="490" r="100" fill="#000" />
+                            <circle cx="420" cy="490" r="100" fill="#000" />
+                        </mask>
+                    </defs>
+                    <rect x="200" y="400" height="200" width="200" fill="#000" mask="url(#stem-mask)" />
+                    <g transform="rotate(225,300,300)">
+                        <rect width="300" height="300" x="200" y="200" />
+                        <circle cx="200" cy="350" r="150" />
+                        <circle cx="350" cy="200" r="150" />
+                    </g>
+                </svg>
+                <div class="absolute flex flex-col items-center text-black bottom-1 right-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                        <defs>
+                            <mask id="stem-mask">
+                                <rect width="100%" height="100%" fill="#fff" />
+                                <circle cx="180" cy="490" r="100" fill="#000" />
+                                <circle cx="420" cy="490" r="100" fill="#000" />
+                            </mask>
+                        </defs>
+                        <rect x="200" y="400" height="200" width="200" fill="#000" mask="url(#stem-mask)" />
+                        <g transform="rotate(225,300,300)">
+                            <rect width="300" height="300" x="200" y="200" />
+                            <circle cx="200" cy="350" r="150" />
+                            <circle cx="350" cy="200" r="150" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative flex w-40 p-2 mt-6 -ml-12 -mr-12 transition-all duration-300 transform bg-white rounded-lg shadow-2xl cursor-pointer h-60 rotate-6 hover:-mt-32">
+            <div class="relative flex items-center justify-center flex-grow border-2 border-red-600 rounded">
+                <div class="absolute flex flex-col items-center text-red-600 top-1 left-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 600 600">
+                        <rect x="100" y="100" width="400" height="400" transform="rotate(45,300,300)" />
+                    </svg>
+                </div>
+                <svg class="w-16 h-16 fill-current text-red-600" viewBox="0 0 600 600">
+                    <rect x="100" y="100" width="400" height="400" transform="rotate(45,300,300)" />
+                </svg>
+                <div class="absolute flex flex-col items-center text-red-600 bottom-1 right-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 600 600">
+                        <rect x="100" y="100" width="400" height="400" transform="rotate(45,300,300)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative flex w-40 p-2 mt-16 -ml-12 -mr-12 transition-all duration-300 transform bg-white rounded-lg shadow-2xl cursor-pointer h-60 rotate-12 hover:-mt-32">
+            <div class="relative flex items-center justify-center flex-grow border-2 border-black rounded">
+                <div class="absolute flex flex-col items-center text-black top-1 left-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 600 600">
+                        <defs>
+                            <mask id="stem-mask">
+                                <rect width="100%" height="100%" fill="#fff" />
+                                <circle cx="180" cy="490" r="100" fill="#000" />
+                                <circle cx="420" cy="490" r="100" fill="#000" />
+                            </mask>
+                        </defs>
+                        <rect x="200" y="400" height="200" width="200" fill="#000" mask="url(#stem-mask)" />
+                        <circle cx="180" cy="350" r="140" />
+                        <circle cx="300" cy="150" r="140" />
+                        <circle cx="420" cy="350" r="140" />
+                    </svg>
+                </div>
+                <svg class="w-16 h-16 fill-current" viewBox="0 0 600 600">
+                    <defs>
+                        <mask id="stem-mask">
+                            <rect width="100%" height="100%" fill="#fff" />
+                            <circle cx="180" cy="490" r="100" fill="#000" />
+                            <circle cx="420" cy="490" r="100" fill="#000" />
+                        </mask>
+                    </defs>
+                    <rect x="200" y="400" height="200" width="200" fill="#000" mask="url(#stem-mask)" />
+                    <circle cx="180" cy="350" r="140" />
+                    <circle cx="300" cy="150" r="140" />
+                    <circle cx="420" cy="350" r="140" />
+                </svg>
+                <div class="absolute flex flex-col items-center text-black bottom-1 right-2">
+                    <span class="font-serif text-xl font-bold">A</span>
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 600 600">
+                        <defs>
+                            <mask id="stem-mask">
+                                <rect width="100%" height="100%" fill="#fff" />
+                                <circle cx="180" cy="490" r="100" fill="#000" />
+                                <circle cx="420" cy="490" r="100" fill="#000" />
+                            </mask>
+                        </defs>
+                        <rect x="200" y="400" height="200" width="200" fill="#000" mask="url(#stem-mask)" />
+                        <circle cx="180" cy="350" r="140" />
+                        <circle cx="300" cy="150" r="140" />
+                        <circle cx="420" cy="350" r="140" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Component End  -->
+    </div>
+
+</body>
+</html>
